@@ -8,13 +8,9 @@ void print_bulb(int bit);
 
 int main(void)
 {
-
     string message = get_string("MESSAGE: ");
-
     int length = strlen(message);
-
     int ascii_values[length];
-
     int binary_number[length][BITS_IN_BYTE];
 
     for (int i = 0; i < length; i++)
@@ -29,7 +25,6 @@ int main(void)
             value /= 2;
         }
     }
-
     for (int k = 0; k < length; k++)
     {
           for (int l = BITS_IN_BYTE-1; l >= 0; l--)

@@ -25,13 +25,14 @@ int main(void)
             value /= 2;
         }
     }
+
     for (int k = 0; k < length; k++)
     {
           for (int l = BITS_IN_BYTE-1; l >= 0; l--)
-        {
-            int final = binary_number[k][l];
-            print_bulb(final);
-        }
+          {
+                int final = binary_number[k][l];
+                print_bulb(final);
+          }
         printf("\n");
      }
     return 0;
